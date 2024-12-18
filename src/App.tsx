@@ -1,7 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import SolutionComponent from './components/react-design-patterns/children-component-pattern/solution-component'
+import ExpensiveComponent from './components/react-design-patterns/children-component-pattern/expensive-component'
 
 function App() {
 
@@ -9,6 +8,9 @@ function App() {
     <>
       <div>
         <h1>React Design Patterns</h1>
+        <h2>1- Children Component Pattern</h2>
+
+        <SolutionComponent children={<ExpensiveComponent/>}/>
       </div>
     </>
   )
